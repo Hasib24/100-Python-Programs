@@ -12,3 +12,9 @@ y = 7
 x,y =y ,x
 
 print("x is ", x, "y is ", y)
+
+number = 11
+if number % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
