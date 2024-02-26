@@ -21,27 +21,29 @@
 
  
 
-
-
 for (var i = 0; i < nums.length; i++) {
-
     for (var n = 1; n < nums.length; n++) {
-
-        // console.log(nums[i] + nums[n])
-
-        if (nums[i] + nums[n] == target) {
-            if (nums[i] == nums[n]) {
-
-                console.log([nums.indexOf(nums[i]), nums.indexOf(nums[i]) + 1])
-
-            } else {
-                console.log([nums.indexOf(nums[i]), nums.indexOf(nums[n])])
-            }
-
-
-
+  
+      if(nums[i] + nums[n] == target){
+        if( nums[i]==nums[n] && nums.indexOf(nums[i]) == nums.indexOf(nums[n]) ){
+          
+          let p = nums.indexOf(nums[n])+1
+            
+          for (var m = p; m < nums.length; m++) {
+              
+              if(nums[i]==nums[m]){
+                  return [i, m]
+              }
+              
         }
-
+            
+        }else{
+              return([ nums.indexOf(nums[i]), nums.indexOf(nums[n]) ])
+             
+        }
+          
+      }
+      
     }
-
-}
+    
+  }
