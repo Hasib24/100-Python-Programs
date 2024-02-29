@@ -4,7 +4,7 @@
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
 // You can return the answer in any order.
 
- 
+
 
 // Example 1:
 // Input: nums = [2,7,11,15], target = 9
@@ -19,31 +19,31 @@
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
 
- 
+
 
 for (var i = 0; i < nums.length; i++) {
-    for (var n = 1; n < nums.length; n++) {
-  
-      if(nums[i] + nums[n] == target){
-        if( nums[i]==nums[n] && nums.indexOf(nums[i]) == nums.indexOf(nums[n]) ){
-          
-          let p = nums.indexOf(nums[n])+1
-            
-          for (var m = p; m < nums.length; m++) {
-              
-              if(nums[i]==nums[m]){
-                  return [i, m]
-              }
-              
+  for (var n = 1; n < nums.length; n++) {
+
+    if (nums[i] + nums[n] == target) {
+      if (nums[i] == nums[n] && nums.indexOf(nums[i]) == nums.indexOf(nums[n])) {
+
+        let p = nums.indexOf(nums[n]) + 1
+
+        for (var m = p; m < nums.length; m++) {
+
+          if (nums[i] == nums[m]) {
+            return [i, m]
+          }
+
         }
-            
-        }else{
-              return([ nums.indexOf(nums[i]), nums.indexOf(nums[n]) ])
-             
-        }
-          
+
+      } else {
+        return ([nums.indexOf(nums[i]), nums.indexOf(nums[n])])
+
       }
-      
+
     }
-    
+
   }
+
+}
