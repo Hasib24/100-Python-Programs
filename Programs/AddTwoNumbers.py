@@ -5,6 +5,7 @@
 # print("Sum of given two numbers :", num1 + num2)
 
 # ============= Solution 02 =============
+print("Welcome to TowSome programme")
 num1 = float(input("Enter first number :"))
 num2 = float(input("Enter second number :"))
 print("Sum of given two numbers :", num1 + num2)
