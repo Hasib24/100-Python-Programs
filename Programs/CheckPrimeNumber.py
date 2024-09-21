@@ -25,7 +25,7 @@
 # Do you want to retry? (y/q): n
 # =========================================================
 
-print("Welcome to Prime Number Checking programme!")
+print("Welcome to Prime Number Checking program!")
 
 def check_prime_number():
     num = int(input("Enter number: "))
