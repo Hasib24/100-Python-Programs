@@ -1,6 +1,7 @@
 import calendar
 from colorama import Fore, Style
-from utils.terminal_utils import clear_terminal
+from utils.terminal_utils import clear_terminal;
+from utils.retry_utils import retry;
 
 clear_terminal()
 print(f"{Fore.GREEN}Welcome to Display Calendar Program{Style.RESET_ALL}")
@@ -16,9 +17,7 @@ def get_year():
             print(
                 f"{Fore.RED}Invalid input! Please enter a valid year (numbers only).{Style.RESET_ALL}"
             )
-            retry = input("Do you want to retry ? (y/q) : ").lower()
-            if retry != "y":
-                quit()
+            retry()
 
 
 # Function to get valid month input
@@ -36,9 +35,7 @@ def get_month():
             print(
                 f"{Fore.RED}Invalid input! Please enter a valid month (numbers only).{Style.RESET_ALL}"
             )
-            retry = input("Do you want to retry ? (y/q) : ").lower()
-            if retry != "y":
-                quit()
+            retry()
 
 
 # Generate and display the calendar
@@ -54,9 +51,7 @@ def generate_and_display_calander():
 try:
     while True:
         generate_and_display_calander()
-        retry = input("Do you want to retry ? (y/q) : ").lower()
-        if retry != "y":
-            quit()
+        retry()
 
 except KeyboardInterrupt:
     print(
