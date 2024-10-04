@@ -17,7 +17,7 @@ This repository contains a collection of Python programs demonstrating various c
 12. **[Sort Words in Alphabetic Order](Programs/SortWordsInAlphabeticOrder.py)**: 
 
 13. **[Factorial Calculation](Programs/FactorialCalculation.py)**: Program to calculate the factorial of a number using recursion.
-14. **Fibonacci Sequence**: Program to generate the Fibonacci sequence up to a given number of terms.
+14. **[Fibonacci Sequence](Programs/FibonacciSequence.py)**: Program to generate the Fibonacci sequence up to a given number of terms.
 15. **Palindrome Check**: Program to check if a string is a palindrome.
 16. **Count Vowels in a String**: Program to count the number of vowels in a given string.
 17. **Reverse a String**: Program to reverse the characters of a given string.
